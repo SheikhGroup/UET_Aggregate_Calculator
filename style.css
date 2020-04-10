@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(Cube-Math.png) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    font-family: Trebuchet MS;
+}
+.check_box{
+    background:url("subtlenet2.png");
+    width: 350px;
+    box-sizing: border-box;
+    box-shadow:0 30px 45px 8px #000;
+    border:2.5px dotted gray;
+    border-bottom-left-radius:25%;
+    border-top-right-radius:25%;
+    margin-top: 22%;
+    position: absolute;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+h5{
+    font-family:Trebuchet MS;
+    text-align:center;
+    color:brown;
+    margin:0 0 20px;
+    padding:0 0 20px;
+    border-bottom:solid 1px gray;
+}
+form label{
+    display:block;
+    margin: 3px;
+    color: brown;
+    }
+form input[type="text"]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    outline: none;
+    height: 15px;
+    color:#000033;
+    padding: 9px;
+    }
+button{
+    background:linear-gradient(45deg,#000033,gray);
+    color:white;
+    border:none;
+    font-family:Trebuchet MS;
+    font-size:15px;
+    padding:5px 5px;
+    width:100%;
+    box-shadow:10px;
+}
+button:hover{
+    background:linear-gradient(45deg,gray,#000033);
+    border-bottom-color:#111;
+}
+button:active{
+    position:relative;
+    top:1px;
+}
+#aggre{
+    font-size:13px;
+    margin-top:12px;
+    text-align:center;
+    font-family:Trebuchet MS;
+   
+}
+#aggre:before{
+    content:" Note:Aggregate=70% of your Fsc Marks + 30% of your ECAT marks";
+    font-family:Trebuchet MS;
+    font-size:12px;
+    display:block;
+    text-align:center;
+    color:green;
+}
