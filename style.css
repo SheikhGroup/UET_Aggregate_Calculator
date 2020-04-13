@@ -1,79 +1,120 @@
-body{
+.boxx {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius: 3px;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    width: 410px;
+}
+
+body {
     margin: 0;
     padding: 0;
-    background: url(Cube-Math.png) no-repeat center center fixed;
+    background-image: url("./Images/homework.png");
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
+    min-height: 100vh;
     font-family: Trebuchet MS;
 }
-.check_box{
-    background:url("subtlenet2.png");
-    width: 350px;
-    box-sizing: border-box;
-    box-shadow:0 30px 45px 8px #000;
-    border:2.5px dotted gray;
-    border-bottom-left-radius:25%;
-    border-top-right-radius:25%;
-    margin-top: 22%;
+
+.box {
     position: absolute;
-    border-radius: 5px;
-    padding: 15px 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 40px;
+    box-sizing: border-box;
+    width: 380px;
 }
-h5{
-    font-family:Trebuchet MS;
-    text-align:center;
-    color:brown;
-    margin:0 0 20px;
-    padding:0 0 20px;
-    border-bottom:solid 1px gray;
+
+.box h2 {
+    padding: 0 0 10px;
+    margin: 0 0 40px;
+    color: white;
+    border-bottom: solid 1px gray;
+    font-weight: lighter;
+    text-align: center;
 }
-form label{
-    display:block;
-    margin: 3px;
-    color: brown;
-    }
-form input[type="text"]{
+
+.box input {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.box input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    background: transparent;
     outline: none;
-    height: 15px;
-    color:#000033;
-    padding: 9px;
-    }
-button{
-    background:linear-gradient(45deg,#000033,gray);
-    color:white;
-    border:none;
-    font-family:Trebuchet MS;
-    font-size:15px;
-    padding:5px 5px;
-    width:100%;
-    box-shadow:10px;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid white;
 }
-button:hover{
-    background:linear-gradient(45deg,gray,#000033);
-    border-bottom-color:#111;
+
+.box form div {
+    position: relative;
 }
-button:active{
-    position:relative;
-    top:1px;
+
+.button-group button {
+    cursor: pointer;
+    color: white;
+    background: #e74c3c;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 7px 7px;
+    text-align: center;
+    width: 45%;
+    margin: 5px;
 }
-#aggre{
-    font-size:13px;
-    margin-top:12px;
-    text-align:center;
-    font-family:Trebuchet MS;
-   
+
+.box form div label {
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    left: 0;
+    transition: 0.5s;
+    color: white;
 }
-#aggre:before{
-    content:" Note:Aggregate=70% of your Fsc Marks + 30% of your ECAT marks";
-    font-family:Trebuchet MS;
-    font-size:12px;
-    display:block;
-    text-align:center;
-    color:green;
+
+.box input:focus~label,
+.box input:valid~label {
+    top: -12px;
+    left: 0;
+    color: lightgray;
+    font-weight: normal;
+}
+
+.box input:focus,
+.box input:valid {
+    border-bottom: 2px solid #e74c3c;
+}
+
+#aggre {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-family: Trebuchet MS;
+}
+
+#go {
+    font-weight: bold;
+}
+
+#aggre:before {
+    content: " Note: Aggregate = 25% of your Matric Marks + 45% of your Fsc Marks + 30% of your ECAT marks";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
 }
